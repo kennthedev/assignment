@@ -1,0 +1,812 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+}
+
+.mini-nav {
+  width: 100%;
+  height: 50px;
+  background: rgb(243, 235, 235);
+  position: relative;
+  top: 0;
+}
+
+.mini-nav ul {
+  display: flex;
+  float: right;
+  margin-right: 6rem;
+}
+
+.mini-nav li {
+  margin-left: 60px;
+  list-style: none;
+}
+
+.current {
+  padding-top: 0.5rem;
+  border-top: 3px #d02536 solid;
+}
+
+.mini-nav a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+}
+
+.mini-nav a:hover {
+  color: #d02536;
+}
+
+.mini-nav2 {
+  width: 100%;
+  height: 80px;
+  background: rgb(243, 235, 235);
+  position: relative;
+  top: 0;
+}
+
+.mini-nav2 ul {
+  display: flex;
+  float: right;
+  margin-right: 6rem;
+}
+
+.mini-nav2 li {
+  margin-left: 60px;
+  list-style: none;
+}
+
+.mini-nav2 a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+}
+
+.mini-nav2 a:hover {
+  color: #d02536;
+}
+
+.navigation {
+  width: 100%;
+  height: 80px;
+  background: rgb(243, 235, 235);
+
+  z-index: 4;
+}
+
+.innerNav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  background: rgb(243, 235, 235);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #d02536;
+  margin-top: 20px;
+  margin-left: 6rem;
+}
+
+.log {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #d02536;
+  position: relative;
+  float: left;
+  margin-left: 6rem;
+  margin-top: 14px;
+}
+.search_bar {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 140px;
+}
+#search {
+  width: 320px;
+  height: 40px;
+  border: 1px rgb(228, 226, 226) solid;
+  margin-right: 20px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.search_icon {
+  height: 30px;
+  width: 60px;
+  background: #e24d08;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding-right: 80px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+.other_icons img {
+  width: 36px;
+  height: 36px;
+  margin-top: 25px;
+  padding-left: 100px;
+  margin-right: 6rem;
+}
+
+.other_icons img:hover {
+  cursor: pointer;
+}
+
+.cart_menu {
+  width: 35%;
+  height: 640px;
+  background: rgb(255, 255, 255);
+  border-left: 1px solid rgb(201, 200, 200);
+  position: relative;
+  float: right;
+  margin-top: -130px;
+  transform: translateX(480px);
+  transition: transform 0.25s ease-in;
+  z-index: 2;
+}
+
+.show_cart {
+  transform: translateX(0px);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header p {
+  font-weight: 600;
+  font-size: 21px;
+  margin-left: 30px;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.header img:hover {
+  cursor: pointer;
+}
+
+.checkout-items {
+  width: 100%;
+  height: 480px;
+}
+
+.checkout {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 130px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #e24d08;
+}
+
+.account {
+  width: 250px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  border-left: 1px solid rgb(201, 200, 200);
+  border-right: 1px solid rgb(201, 200, 200);
+  border-bottom: 1px solid rgb(201, 200, 200);
+  z-index: -1;
+  position: relative;
+  float: right;
+  margin-right: -420px;
+  transform: translateY(-151px);
+  transition: transform 0.25s ease-in;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.account a {
+  width: 140px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  z-index: 21;
+  padding-top: 10px;
+  color: white;
+
+  text-decoration: none;
+}
+
+.showaccount {
+  transform: translateY(0px);
+}
+.category1 {
+  width: 100%;
+  height: 480px;
+  position: absolute;
+  z-index: -3;
+}
+
+.category2 {
+  width: 100%;
+  height: 480px;
+  margin-top: 400px;
+  position: absolute;
+}
+
+.category3 {
+  width: 100%;
+  height: 480px;
+  position: absolute;
+}
+
+.category1 h2 {
+  margin-top: 40px;
+  margin-left: 6rem;
+}
+
+.items {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.items p {
+  margin-top: 40px;
+  font-size: 14 px;
+}
+
+.item1 {
+  width: 200px;
+  height: 280px;
+  background: rgb(255, 255, 255);
+
+  border-radius: 4px;
+}
+
+.item_image1,
+.item_image2,
+.item_image3,
+.item_image4,
+.item_image5,
+.item_image6,
+.item_image7,
+.item_image8,
+.item_image9,
+.item_image10,
+.item_image11,
+.item_image12,
+.item_image13,
+.item_image14,
+.item_image15 {
+  width: 50%;
+  height: 108px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.item_image1 {
+  background: url(./images/earbuds.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image1 {
+  background: url(./images/earbuds.png);
+  background-size: cover;
+  background-position: center;
+}
+.item_image2 {
+  background: url(./images/charger.png);
+  background-size: cover;
+  background-position: center;
+}
+.item_image3 {
+  background: url(./images/galaxy-s21-phantom-violet.webp);
+  background-size: cover;
+  background-position: center;
+}
+.item_image4 {
+  background: url(./images/headphones.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item_image5 {
+  background: url(./images/xiaomi_mi11t_pro_010.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image6 {
+  background: url(./images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image7 {
+  background: url(./images/image2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image8 {
+  background: url(./images/image3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image9 {
+  background: url(./images/image4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image10 {
+  background: url(./images/image5.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image11 {
+  background: url(./images/image6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image12 {
+  background: url(./images/image7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image13 {
+  background: url(./images/image8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image14 {
+  background: url(./images/image9.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.item_image15 {
+  background: url(./images/image10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.items button,
+.add_button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  margin-top: 5px;
+  background: #e24d08;
+  color: white;
+  border: none;
+  font-weight: 300;
+  border-radius: 3px;
+}
+
+.item1:hover {
+  transform: scale(1.03, 1.03);
+  transition: 0.2s ease;
+  box-shadow: rgb(182, 179, 179) 1px 1px 16px;
+}
+
+.add_button:hover {
+  padding-left: 30px;
+  padding-right: 30px;
+  transform: translateX(-15px);
+  transition: ease 0.2s;
+  background: white;
+  border: 2px #e24d08 solid;
+  color: #e24d08;
+  cursor: pointer;
+}
+
+.top {
+  width: 100%;
+  height: 400px;
+  background: rgb(221, 221, 221);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.top1 {
+  width: 500px;
+  height: 300px;
+  background: url(./images/oppo-banner.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.top2 {
+  width: 500px;
+  height: 300px;
+  background: url(./images/Mobile-Accessories-Shop-Names-Ideas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 100px;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.top2 p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 80px;
+  color: white;
+}
+
+.explore {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+
+.explore:hover {
+  background: #d02536;
+  transition: 0.25s ease-in;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  color: white;
+}
+
+.oppo {
+  font-weight: 600;
+  margin-left: 20px;
+  color: rgb(30, 163, 102);
+}
+
+.specs {
+  margin-left: 25px;
+  line-height: 28px;
+}
+
+.btnoppo {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 8px;
+  color: rgb(30, 163, 102);
+  border: 2px solid rgb(30, 163, 102);
+  font-size: 18px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.btnoppo:hover {
+  background: rgb(30, 163, 102);
+  transition: all 0.25s ease-in;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  color: white;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background: rgb(32, 32, 32);
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 80px;
+  line-height: 20px;
+}
+
+.footer2 {
+  width: 100%;
+  height: 100px;
+  background: rgb(32, 32, 32);
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 80px;
+  line-height: 20px;
+  position: relative;
+  bottom: 0;
+}
+.footer p {
+  font-size: 24px;
+}
+
+.contactss {
+  height: 350px;
+  width: 500px;
+  background: white;
+  margin-top: 80px;
+  margin-left: 600px;
+  padding-top: 10px;
+}
+
+.contactss2 {
+  height: 350px;
+  width: 500px;
+  background: rgb(235, 235, 235);
+  margin-top: 80px;
+  margin-left: 400px;
+  padding-top: 10px;
+  position: relative;
+  z-index: -10;
+  animation: animate 20s ease-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  20% {
+    box-shadow: 2px 2px 16px #d02536;
+  }
+  21% {
+    box-shadow: 2px 2px 16px #d02536;
+  }
+  22%,
+  42% {
+    box-shadow: 2px 2px 16px rgb(30, 163, 102);
+  }
+  42% {
+    box-shadow: 2px 2px 16px rgb(30, 163, 102);
+  }
+
+  43%,
+  63% {
+    box-shadow: 2px 2px 16px #e24d08;
+  }
+
+  63% {
+    box-shadow: 2px 2px 16px #e24d08;
+  }
+
+  64%,
+  84% {
+    box-shadow: 2px 2px 16px rgb(30, 163, 102);
+  }
+
+  84% {
+    box-shadow: 2px 2px 16px rgb(30, 163, 102);
+  }
+
+  85%,
+  99% {
+    box-shadow: 2px 2px 16px #e24d08;
+  }
+
+  99% {
+    box-shadow: 2px 2px 16px #e24d08;
+  }
+
+  100% {
+    box-shadow: 2px 2px 16px #d02536;
+  }
+}
+
+.socialss {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.social {
+  display: flex;
+  margin-left: 60px;
+}
+
+.social p {
+  margin-left: 40px;
+}
+
+.pat {
+  margin-left: 60px;
+  font-weight: 600;
+}
+
+.social:hover {
+  cursor: pointer;
+}
+
+.contactss p {
+  line-height: 32px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.contactss span {
+  display: block;
+}
+.about {
+  width: 100%;
+}
+.about1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+.aboutimage1 {
+  width: 600px;
+  height: 400px;
+  position: relative;
+
+  background: url(./images/victoria-kubiaki-t0Aio60jD4Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutimage2 {
+  width: 600px;
+  height: 400px;
+  background: url(./images/7ways_unboxingmemorable_blog.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 100px;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 6rem;
+}
+.login_image {
+  width: 400px;
+  height: 400px;
+  background: url(./images/login.jpg);
+  background-size: cover;
+}
+
+.login form {
+  margin-right: 300px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.login legend {
+  margin-top: 30px;
+  color: #706d6d;
+}
+
+.login input {
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 189, 189);
+}
+
+.login input:focus {
+  outline: none;
+  border: 1px solid #e24d08;
+}
+
+.login_button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 30px;
+  border: none;
+  background: #e24d08;
+  color: white;
+  border-radius: 5px;
+}
+
+.login_button:hover {
+  cursor: pointer;
+}
+.forgot {
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.forgot:hover {
+  color: #e24d08;
+}
+
+.formname {
+  margin-top: 30px;
+  color: #272727;
+  margin-left: 60px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.up {
+  margin-top: 130px;
+  position: relative;
+}
+
+.up a {
+  color: #d02536;
+}
+
+/*signup page css*/
+
+.signup {
+  width: 400px;
+  height: 400px;
+  background: url(./images/signup.jpg);
+  background-size: cover;
+}
+
+.signupbutton {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 30px;
+  border: none;
+  background: #d02536;
+  color: white;
+  border-radius: 5px;
+}
+
+.si {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 6rem;
+}
+
+.si legend {
+  margin-top: 10px;
+  color: #706d6d;
+}
+.si form {
+  margin-right: 300px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: -30px;
+}
+
+.si input {
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 189, 189);
+}
+
+.si input:focus {
+  outline: none;
+  border: 1px solid #d02536;
+}
